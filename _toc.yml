@@ -2,6 +2,5 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: EvictionsMain
+root: _build/html/EvictionsMain
 chapters:
-- file: EvictionsMain
