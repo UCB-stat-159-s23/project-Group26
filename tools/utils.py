@@ -92,5 +92,4 @@ def create_map(df, zips, feature, title_desc = ''):
     folium.LayerControl().add_to(m)
     # save map with filename based on the feature of interest
     m.save(outfile = feature + '_map.html')
-=======
->>>>>>> 351bd563def62dc25ba831eae366bef69402ac91
+
