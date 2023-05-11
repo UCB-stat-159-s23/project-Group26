@@ -28,18 +28,18 @@ def get_count_plot(df, feature):
 
 
 # function to get the total number of the reasons for eviction and plot it
-def reason_for_evict(self, df, names):
+def reason_for_evict(df, names):
     """
     This function aims to get the total number of the reasons for eviction for each different reason,
     and display the result in the form of a barplot.
     The arugument 'names' is a list of the names for certain eviction reasons that you want to look into.
     """
-    self.df = df
-    self.names = names
+    
+    #self.names = names
     reasons = df[names]
-    self.reasons = reasons
+    
     columnNames = reasons.columns
-
+    
     # create an empty dictionary for the reasons that has TRUE input for future counts
     trues_oc = {}
 
