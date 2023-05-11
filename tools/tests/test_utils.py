@@ -22,4 +22,10 @@ df = sample
 def test_get_count_plot():
     assert type(df) == pd.core.frame.DataFrame
     
+# test for create_map()
+def test_create_map():
+    assert type(df) == pd.core.frame.DataFrame
+    
+    
 test_get_count_plot()
+test_create_map()
