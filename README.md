@@ -4,7 +4,7 @@
 
 Link to our book: https://ucb-stat-159-s23.github.io/project-Group26/EvictionsMain.html
 
-Authors: Yiran Li, Carrie Hu, Angelo Punzalan, Oona Risse Adams
+Authors: Yiran Li, Carrie Hu, Angelo Punzalan, Oona Risse-Adams
 
 ## Introduction
 In this notebook, we will take in the Eviction_Notices.csv file from https://catalog.data.gov/dataset/eviction-notices and analyze any possible patterns of evictions in San Francisco.
