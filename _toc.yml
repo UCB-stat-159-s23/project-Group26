@@ -4,3 +4,4 @@
 format: jb-book
 root: _build/html/EvictionsMain
 chapters:
+- file: hw/project-project-group26/_build/html/EvictionsMain.html
