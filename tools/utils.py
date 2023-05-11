@@ -87,7 +87,7 @@ def create_map(df, zips, feature, title_desc = ''):
         # first element contains location information, second element contains feature of interest
         columns = [zips, feature],
         fill_color = 'RdYlGn',
-        legendname = (' ').join(feature.split('')).title() + ' ' + title_desc + ' Across SF'
+        legend_name = (' ').join(feature.split(' ')).title() + ' ' + title_desc + ' Across SF'
     )
     folium.LayerControl().add_to(m)
     # save map with filename based on the feature of interest
