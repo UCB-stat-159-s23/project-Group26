@@ -64,6 +64,15 @@ def reason_for_evict(df, names):
 
 # function to create heat map for counts of evictions in sf based on zip
 def create_map(df, zips, feature, title_desc = ''):
+    """
+    This function aims to get the total number of the reasons for eviction per zip code on a map of sf.
+    
+    df = dataframe reading from
+    zips = zips column name
+    feature = desired feature
+    title_desc = additional comments for title
+    """
+    
     sf_geo = r'/home/jovyan/sf_geojson/updated-file.json'
     # initiating a Folium map with LA's longitude and latitude
     m = folium.Map(location = [37.7749, -122.4194], zoom_start = 11)
