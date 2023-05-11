@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: SFEvictions/EvictionsMain.ipynb
+- file: index
 - file: notebooks
 - file: markdown-notebooks
