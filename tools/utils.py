@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 import seaborn as sns
+import folium
+import re
+import json
 
 # function to get the total number of counts of evictions per selected feature
 def get_count_plot(df, feature):
@@ -60,3 +63,27 @@ def reason_for_evict(df, names):
     plt.ylabel('counts')
     plt.title("Reasons count for Different Reasons for Eviction")
     plt.legend(loc='best', fontsize='7')
+
+def create_map(self, df, zips, feature, title_desc = ''):
+    """
+    This function creates a heatmap based on the zipcode
+    """
+    sf_geo = r'/home/jovyan/sf_geojson/updated-file.json'
+    # initiating a Folium map with LA's longitude and latitude
+    m = self.folium.Map(location = [37.7749, -122.4194], zoom_start = 11)
+    # creating a choropleth map
+    m.choropleth(
+        geo_data = sf_geo,
+        fill_opacity = 0.7,
+        line_opacity = 0.2,
+        data = df,
+        # refers to which key within the GeoJSON to map the ZIP code to
+        key_on = 'feature.properties.id',
+        # first element contains location information, second element contains feature of interest
+        columns = [zips, feature],
+        fill_color = 'RdYlGn',
+        legendname = (' ').join(feature.split('')).title() + ' ' + title_desc + ' Across SF'
+    )
+    folium.LayerControl().add_to(m)
+    # save map with filename based on the feature of interest
+    m.save(outfile = feature + '_map.html')
