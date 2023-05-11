@@ -6,4 +6,4 @@ Angelo Punzalan: Data analysis (Loading dataset in, evictions per reason, number
 
 Carrie Hu: Narrative, Conclusion
 
-Oona Risse Adams:
+Oona Risse Adams: Data analysis. Including map image, Utility functions, Testing
