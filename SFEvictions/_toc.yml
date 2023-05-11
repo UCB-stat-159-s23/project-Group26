@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
+- file: EvictionsMain.ipynb
 - file: notebooks
 - file: markdown-notebooks
