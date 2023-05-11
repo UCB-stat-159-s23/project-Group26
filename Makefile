@@ -33,7 +33,10 @@ update-env:
     conda activate $(CONDA_ENV_NAME)
     python -m ipykernel install --user --name $(CONDA_ENV_NAME) --display-name "$(CONDA_ENV_NAME)"
     
-
+# build the JupyterBook normally
+.PHONY: html
+html:
+	jupyter-book build .
 
 # clean up the generated figures, tables and _build folders.
 .PHONY: clean
