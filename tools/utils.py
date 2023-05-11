@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 import seaborn as sns
+import folium 
 
 # function to get the total number of counts of evictions per selected feature
 def get_count_plot(df, feature):
